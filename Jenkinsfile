@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/prathyusha168/jmeter_performance_project_blazedemo.git'
-            }
-        }
-
         stage('Run JMeter') {
             steps {
                 bat '''
