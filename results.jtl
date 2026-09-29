@@ -1,0 +1,19 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1790675870400,1166,Search Flight,200,OK,Thead Group HAR Imported 1-1,text,true,,2339,1183,1,1,https://blazedemo.com/reserve.php,1164,0,731
+1790675868288,1166,PAGE_01 - /reserve.php,200,"Number of samples in transaction : 1, number of failing samples : 0",Thead Group HAR Imported 1-1,,true,,2339,1183,1,1,null,1164,2124,731
+1790675873597,434,Select Flight,200,OK,Thead Group HAR Imported 1-1,text,true,,2489,1241,1,1,https://blazedemo.com/purchase.php,433,0,0
+1790675871579,434,PAGE_02 - /purchase.php,200,"Number of samples in transaction : 1, number of failing samples : 0",Thead Group HAR Imported 1-1,,true,,2489,1241,1,1,null,433,2020,0
+1790675876037,411,confirm Booking,200,OK,Thead Group HAR Imported 1-1,text,true,,2452,1362,1,1,https://blazedemo.com/confirmation.php,410,0,0
+1790675874033,411,PAGE_03 - /confirmation.php,200,"Number of samples in transaction : 1, number of failing samples : 0",Thead Group HAR Imported 1-1,,true,,2452,1362,1,1,null,410,2005,0
+1790675878454,411,Search Flight,200,OK,Thead Group HAR Imported 1-1,text,true,,2391,1183,1,1,https://blazedemo.com/reserve.php,409,0,0
+1790675876450,411,PAGE_01 - /reserve.php,200,"Number of samples in transaction : 1, number of failing samples : 0",Thead Group HAR Imported 1-1,,true,,2391,1183,1,1,null,409,2005,0
+1790675880882,418,Select Flight,200,OK,Thead Group HAR Imported 1-1,text,true,,2620,1241,1,1,https://blazedemo.com/purchase.php,416,0,0
+1790675878867,418,PAGE_02 - /purchase.php,200,"Number of samples in transaction : 1, number of failing samples : 0",Thead Group HAR Imported 1-1,,true,,2620,1241,1,1,null,416,2020,0
+1790675883311,439,confirm Booking,200,OK,Thead Group HAR Imported 1-1,text,true,,2305,1357,1,1,https://blazedemo.com/confirmation.php,436,0,0
+1790675881306,439,PAGE_03 - /confirmation.php,200,"Number of samples in transaction : 1, number of failing samples : 0",Thead Group HAR Imported 1-1,,true,,2305,1357,1,1,null,436,2008,0
+1790675885757,407,Search Flight,200,OK,Thead Group HAR Imported 1-1,text,true,,2379,1183,1,1,https://blazedemo.com/reserve.php,406,0,0
+1790675883753,407,PAGE_01 - /reserve.php,200,"Number of samples in transaction : 1, number of failing samples : 0",Thead Group HAR Imported 1-1,,true,,2379,1183,1,1,null,406,2006,0
+1790675888170,494,Select Flight,200,OK,Thead Group HAR Imported 1-1,text,true,,2655,1241,1,1,https://blazedemo.com/purchase.php,480,0,0
+1790675886166,494,PAGE_02 - /purchase.php,200,"Number of samples in transaction : 1, number of failing samples : 0",Thead Group HAR Imported 1-1,,true,,2655,1241,1,1,null,480,2005,0
+1790675890682,417,confirm Booking,200,OK,Thead Group HAR Imported 1-1,text,true,,2341,1356,1,1,https://blazedemo.com/confirmation.php,403,0,0
+1790675888665,417,PAGE_03 - /confirmation.php,200,"Number of samples in transaction : 1, number of failing samples : 0",Thead Group HAR Imported 1-1,,true,,2341,1356,1,1,null,403,2019,0
