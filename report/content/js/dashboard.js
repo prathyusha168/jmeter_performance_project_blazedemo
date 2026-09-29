@@ -133,7 +133,7 @@ $(document).ready(function() {
         widgets: ['zebra']
     });
 
-    var data = {"OkPercent": 44.44444444444444, "KoPercent": 55.55555555555556};
+    var data = {"OkPercent": 100.0, "KoPercent": 0.0};
     var dataset = [
         {
             "label" : "FAIL",
@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.05555555555555555, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.16666666666666666, 500, 1500, "PAGE_02 - /purchase.php"], "isController": true}, {"data": [0.0, 500, 1500, "Search Flight"], "isController": false}, {"data": [0.0, 500, 1500, "PAGE_01 - /reserve.php"], "isController": true}, {"data": [0.0, 500, 1500, "PAGE_03 - /confirmation.php"], "isController": true}, {"data": [0.16666666666666666, 500, 1500, "Select Flight"], "isController": false}, {"data": [0.0, 500, 1500, "confirm Booking"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.7777777777777778, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.8333333333333334, 500, 1500, "PAGE_02 - /purchase.php"], "isController": true}, {"data": [0.8333333333333334, 500, 1500, "Search Flight"], "isController": false}, {"data": [0.8333333333333334, 500, 1500, "PAGE_01 - /reserve.php"], "isController": true}, {"data": [0.6666666666666666, 500, 1500, "PAGE_03 - /confirmation.php"], "isController": true}, {"data": [0.8333333333333334, 500, 1500, "Select Flight"], "isController": false}, {"data": [0.6666666666666666, 500, 1500, "confirm Booking"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 9, 5, 55.55555555555556, 2220.777777777778, 332, 9782, 338.0, 9782.0, 9782.0, 9782.0, 0.24938346864695615, 0.2911367989553604, 0.3076433002438416], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["PAGE_02 - /purchase.php", 3, 1, 33.333333333333336, 1276.6666666666667, 336, 2428, 1066.0, 2428.0, 2428.0, 2428.0, 0.11241428410836736, 0.1868448355004309, 0.13704150194851425], "isController": true}, {"data": ["Search Flight", 3, 2, 66.66666666666667, 1903.3333333333335, 336, 5036, 338.0, 5036.0, 5036.0, 5036.0, 0.09784735812133073, 0.08959785755055447, 0.11304045376712328], "isController": false}, {"data": ["PAGE_01 - /reserve.php", 3, 2, 66.66666666666667, 1903.3333333333335, 336, 5036, 338.0, 5036.0, 5036.0, 5036.0, 0.09770077509281574, 0.08946363292190451, 0.11287111028789162], "isController": true}, {"data": ["PAGE_03 - /confirmation.php", 3, 2, 66.66666666666667, 3482.333333333333, 332, 9782, 333.0, 9782.0, 9782.0, 9782.0, 0.12199089134677944, 0.11277803757319455, 0.16182059968689005], "isController": true}, {"data": ["Select Flight", 3, 1, 33.333333333333336, 1276.6666666666667, 336, 2428, 1066.0, 2428.0, 2428.0, 2428.0, 0.11241428410836736, 0.1868448355004309, 0.13704150194851425], "isController": false}, {"data": ["confirm Booking", 3, 2, 66.66666666666667, 3482.333333333333, 332, 9782, 333.0, 9782.0, 9782.0, 9782.0, 0.121921482565228, 0.1127138706006665, 0.16172852911891408], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 9, 0, 0.0, 564.4444444444445, 407, 1339, 455.0, 1339.0, 1339.0, 1339.0, 0.42543134010872136, 1.0202319930276529, 0.523803105057906], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["PAGE_02 - /purchase.php", 3, 0, 0.0, 474.3333333333333, 430, 538, 455.0, 538.0, 538.0, 538.0, 0.19672131147540983, 0.49077868852459017, 0.23840932377049182], "isController": true}, {"data": ["Search Flight", 3, 0, 0.0, 730.0, 420, 1339, 431.0, 1339.0, 1339.0, 1339.0, 0.1855976243504083, 0.4358402545780747, 0.2144160054751299], "isController": false}, {"data": ["PAGE_01 - /reserve.php", 3, 0, 0.0, 730.0, 420, 1339, 431.0, 1339.0, 1339.0, 1339.0, 0.1846040243677312, 0.4335069764937542, 0.2132681258076426], "isController": true}, {"data": ["PAGE_03 - /confirmation.php", 3, 0, 0.0, 489.0, 407, 539, 521.0, 539.0, 539.0, 539.0, 0.1966826198124959, 0.4624474488625189, 0.2608989829869534], "isController": true}, {"data": ["Select Flight", 3, 0, 0.0, 474.3333333333333, 430, 538, 455.0, 538.0, 538.0, 538.0, 0.1966826198124959, 0.490682160886383, 0.23836243280010488], "isController": false}, {"data": ["confirm Booking", 3, 0, 0.0, 489.0, 407, 539, 521.0, 539.0, 539.0, 539.0, 0.1965923984272608, 0.46223531700524245, 0.2607793045543906], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -217,7 +217,7 @@ $(document).ready(function() {
     }, [[0, 0]], 0, summaryTableHeader);
 
     // Create error table
-    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["429/Too Many Requests", 5, 100.0, 55.55555555555556], "isController": false}]}, function(index, item){
+    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": []}, function(index, item){
         switch(index){
             case 2:
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 9, 5, "429/Too Many Requests", 5, "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": ["Search Flight", 3, 2, "429/Too Many Requests", 2, "", "", "", "", "", "", "", ""], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": ["Select Flight", 3, 1, "429/Too Many Requests", 1, "", "", "", "", "", "", "", ""], "isController": false}, {"data": ["confirm Booking", 3, 2, "429/Too Many Requests", 2, "", "", "", "", "", "", "", ""], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 9, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 

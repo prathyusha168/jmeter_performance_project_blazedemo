@@ -8,30 +8,35 @@ pipeline {
                 bat '''
                 cd /d C:\\apache-jmeter-5.6.3\\bin
 
-                del /Q C:\\projectsforperformance\\results.jtl
+                del /Q "%WORKSPACE%\\results.jtl"
 
-                rmdir /S /Q C:\\projectsforperformance\\report
+                rmdir /S /Q "%WORKSPACE%\\report"
 
                 jmeter -n ^
                 -t "%WORKSPACE%\\blazetest.jmx" ^
-                -l C:\\projectsforperformance\\results.jtl ^
+                -l "%WORKSPACE%\\results.jtl" ^
                 -e ^
-                -o C:\\projectsforperformance\\report
+                -o "%WORKSPACE%\\report"
                 '''
             }
         }
+
     }
 
     post {
+
         always {
+
             publishHTML([
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'C:/projectsforperformance/report',
+                reportDir: 'report',
                 reportFiles: 'index.html',
                 reportName: 'JMeter Performance Report'
             ])
+
         }
+
     }
 }
