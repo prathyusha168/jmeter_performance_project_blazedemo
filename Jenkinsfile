@@ -6,6 +6,10 @@ pipeline {
         stage('Run JMeter') {
             steps {
                 bat '''
+                cd /d C:\\apache-jmeter-5.6.3\\bin
+
+                del /Q C:\\projectsforperformance\\results.jtl
+
                 rmdir /S /Q C:\\projectsforperformance\\report
 
                 jmeter -n ^
@@ -16,6 +20,5 @@ pipeline {
                 '''
             }
         }
-
     }
 }
