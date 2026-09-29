@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 
-        stage('Run JMeter Test') {
+        stage('Run JMeter Test 2ndtime') {
             steps {
                 bat '''
                 cd /d C:\\apache-jmeter-5.6.3\\bin
