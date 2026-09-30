@@ -17,13 +17,11 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - name: Check Java
-        run: java -version
-
       - name: Download JMeter
         run: |
           curl -L -o jmeter.zip https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.6.3.zip
           powershell Expand-Archive jmeter.zip -DestinationPath .
 
-      - name: Show Files
-        run: dir
+      - name: Run JMeter Test
+        run: |
+          .\apache-jmeter-5.6.3\bin\jmeter.bat -n -t blazetest.jmx -l results.jtl
