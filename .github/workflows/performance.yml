@@ -11,11 +11,17 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Check Java
-        run: java -version
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
 
-      - name: Check JMeter
-        run: jmeter --version
+      - name: Download JMeter
+        run: |
+          curl -L -o jmeter.zip https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.6.3.zip
+          powershell Expand-Archive jmeter.zip -DestinationPath .
 
       - name: Run JMeter Test
-        run: jmeter -n -t blazetest.jmx -l results.jtl
+        run: |
+          .\apache-jmeter-5.6.3\bin\jmeter.bat -n -t blazetest.jmx -l results.jtl
