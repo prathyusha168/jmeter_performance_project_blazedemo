@@ -1,0 +1,15 @@
+name: JMeter Performance Test
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+      - name: Start Pipeline
+        run: echo Hello Prathyusha
+
+      - name: Show Files
+        run: dir
